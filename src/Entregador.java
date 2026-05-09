@@ -1,7 +1,7 @@
 abstract class Entregador {
 
     private String nome;
-    private double quantidadeProdutos;
+    private double quantidadeMaxProdutos;
     private double taxa;
 
     public String getNome() {
@@ -12,12 +12,12 @@ abstract class Entregador {
         this.nome = nome;
     }
 
-    public double getQuantidadeProdutos() {
-        return quantidadeProdutos;
+    public double getQuantidadeMaxProdutos() {
+        return quantidadeMaxProdutos;
     }
 
-    public void setQuantidadeProdutos(double quantidadeProdutos) {
-        this.quantidadeProdutos = quantidadeProdutos;
+    public void setQuantidadeMaxProdutos(double quantidadeMaxProdutos) {
+        this.quantidadeMaxProdutos = quantidadeMaxProdutos;
     }
 
     public double getTaxa() {
@@ -29,7 +29,7 @@ abstract class Entregador {
     }
 
     public void quantidadeDeProdutos() {
-        System.out.println("A quantidade de produtos máxima que esse entregador pode carregar é: " + quantidadeProdutos);
+        System.out.println("A quantidade de produtos máxima que esse entregador pode carregar é: " + quantidadeMaxProdutos);
     }
 
     abstract void descricao();

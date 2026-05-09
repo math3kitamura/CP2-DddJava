@@ -1,13 +1,9 @@
 public class EntregadorMoto extends Entregador implements TaxaDeEntrega{
 
-    public EntregadorMoto(String nome, double quantidadeProdutos, double taxa){
+    public EntregadorMoto(String nome, double quantidadeMaxProdutos, double taxa){
         setNome(nome);
-        setQuantidadeProdutos(quantidadeProdutos);
+        setQuantidadeMaxProdutos(quantidadeMaxProdutos);
         setTaxa(taxa);
-    }
-
-    public void quantidadeDeProdutos() {
-        super.quantidadeDeProdutos();
     }
 
     @Override
