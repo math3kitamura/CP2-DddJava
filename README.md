@@ -1,10 +1,10 @@
 # Sistema de Entregas para E-commerce
 
 ## Integrantes
-- Matheus Kitamura Gurther
-- João Guilherme Guida
-- Gustavo Barroso
-- Victor Alves
+- Matheus Kitamura Gurther - RM563205
+- João Guilherme Guida - RM565244
+- Gustavo Barroso - RM565705
+- Victor Alves - RM565723
 
 ## Descrição
 Projeto em Java que simula o funcionamento de um sistema de entregas para e-commerce, utilizando conceitos de Programação Orientada a Objetos.
