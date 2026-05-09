@@ -16,7 +16,7 @@ abstract class Entregador {
         return quantidadeProdutos;
     }
 
-    public void setQuantidadeProdutos(Double quantidadeProdutos) {
+    public void setQuantidadeProdutos(double quantidadeProdutos) {
         this.quantidadeProdutos = quantidadeProdutos;
     }
 
