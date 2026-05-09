@@ -1,10 +1,9 @@
 public class EntregadorCarro extends Entregador implements TaxaDeEntrega{
-    private double taxa;
 
     public EntregadorCarro(String nome, String quantidadeProdutos, double taxa){
         setNome(nome);
         setQuantidadeProdutos(quantidadeProdutos);
-        this.taxa = taxa;
+        setTaxa(taxa);
     }
 
     public void quantidadeDeProdutos() {
@@ -18,7 +17,7 @@ public class EntregadorCarro extends Entregador implements TaxaDeEntrega{
 
     @Override
     public void taxaDeEntrega() {
-        taxa += taxa * 0.25;
-        System.out.println("O valor da taxa de entrega é: " + taxa);
+        setTaxa(getTaxa() * 0.25);
+        System.out.println("O valor da taxa de entrega é: " + getTaxa());
     }
 }
