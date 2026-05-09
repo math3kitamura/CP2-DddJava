@@ -1,7 +1,7 @@
 abstract class Entregador {
 
     private String nome;
-    private String quantidadeProdutos;
+    private double quantidadeProdutos;
     private double taxa;
 
     public String getNome() {
@@ -12,11 +12,11 @@ abstract class Entregador {
         this.nome = nome;
     }
 
-    public String getQuantidadeProdutos() {
+    public double getQuantidadeProdutos() {
         return quantidadeProdutos;
     }
 
-    public void setQuantidadeProdutos(String quantidadeProdutos) {
+    public void setQuantidadeProdutos(Double quantidadeProdutos) {
         this.quantidadeProdutos = quantidadeProdutos;
     }
 

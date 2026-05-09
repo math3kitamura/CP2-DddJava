@@ -1,13 +1,13 @@
 public class EntregadorCarro extends Entregador implements TaxaDeEntrega{
 
-    public EntregadorCarro(String nome, String quantidadeProdutos, double taxa){
+    public EntregadorCarro(String nome, double quantidadeProdutos, double taxa){
         setNome(nome);
         setQuantidadeProdutos(quantidadeProdutos);
         setTaxa(taxa);
     }
 
     public void quantidadeDeProdutos() {
-        System.out.println("A quantidade de produtos máxima que esse entregador pode carregar é: " + getQuantidadeProdutos());
+        super.quantidadeDeProdutos();
     }
 
     @Override
@@ -17,7 +17,7 @@ public class EntregadorCarro extends Entregador implements TaxaDeEntrega{
 
     @Override
     public void taxaDeEntrega() {
-        setTaxa(getTaxa() * 0.25);
+        setTaxa(getTaxa() * 1.25);
         System.out.println("O valor da taxa de entrega é: " + getTaxa());
     }
 }
