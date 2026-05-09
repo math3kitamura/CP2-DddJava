@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public class EntregadorMoto extends Entregador{
+    public EntregadorMoto(String nome){
+        getNome();
+    }
 
-public class EntregadorMoto {
+    @Override
+    void descricao() {
+        System.out.println("O pedido será entregue de moto por: " + getNome());
+    }
 }
